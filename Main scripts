@@ -1,4 +1,3 @@
-
 if game.PlaceId == 7711635737 then -- EH Vortex
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Paullennox12341234/Vortex-Main/main/Vortex%20EH'))("")
 end
