@@ -1,24 +1,4 @@
---Discord Auto Invite
---[[
-pcall(function()
-    local Request = syn and syn.request or request
-    Request({
-        Url = "http://127.0.0.1:6463/rpc?v=1",
-        Method = "POST",
-        Headers = {
-            ["Content-Type"] = "application/json",
-            ["Origin"] = "https://discord.com"
-        },
-        Body = game.HttpService:JSONEncode({
-            cmd = "INVITE_BROWSER",
-            args = {
-                code = "W82CpcRyr6"
-            },
-            nonce = game.HttpService:GenerateGUID(false)
-        }),
-    })
-end)
-]]
+-
 
 if game.PlaceId == 7711635737 then -- EH Vortex
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Paullennox12341234/Vortex-Main/main/Vortex%20EH'))("")
