@@ -21,4 +21,4 @@ end)
 ]]
 
 if game.PlaceId == 7711635737 then -- EH Vortex
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Butterisgood/Butter/main/lt2'))("")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Paullennox12341234/Vortex-Main/main/Vortex%20EH'))("")
