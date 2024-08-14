@@ -1,0 +1,610 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local Frame_3 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local berschrift = Instance.new("TextLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local teleport = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Fly = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local xtotoggle = Instance.new("TextLabel")
+local clicktotp = Instance.new("TextLabel")
+local Frame_4 = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local Aimbot = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel1 = Instance.new("TextLabel")
+local Frame_5 = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local UIGradient_4 = Instance.new("UIGradient")
+local ImageButton = Instance.new("ImageButton")
+local ImageButton_2 = Instance.new("ImageButton")
+local ImageButton_3 = Instance.new("ImageButton")
+local TextLabel2 = Instance.new("TextLabel")
+local TextLabel2_2 = Instance.new("TextLabel")
+local TextLabel1_2 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.DisplayOrder = 2
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.63845402, 0, 0.248713553, 0)
+Frame.Size = UDim2.new(0, -566, 0, 586)
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(71, 71, 71)
+Frame_2.BackgroundTransparency = 0.500
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.99895972, 0, 0.0289727431, 0)
+Frame_2.Size = UDim2.new(0, 566, 0, 245)
+
+ImageLabel.Parent = Frame_2
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.465293199, 0, -0.295833707, 0)
+ImageLabel.Size = UDim2.new(0, 321, 0, 311)
+ImageLabel.Image = "rbxassetid://18923078429"
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(83, 83, 83)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(83, 83, 83))}
+UIGradient.Rotation = 90
+UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.53), NumberSequenceKeypoint.new(0.51, 0.00), NumberSequenceKeypoint.new(1.00, 0.00)}
+UIGradient.Parent = Frame_2
+
+UICorner.Parent = Frame_2
+
+Frame_3.Parent = Frame_2
+Frame_3.BackgroundColor3 = Color3.fromRGB(71, 71, 71)
+Frame_3.BackgroundTransparency = 0.500
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(-0.000353217765, 0, 1.09447539, 0)
+Frame_3.Size = UDim2.new(0, 352, 0, 240)
+
+UICorner_2.Parent = Frame_3
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(83, 83, 83)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(83, 83, 83))}
+UIGradient_2.Rotation = 90
+UIGradient_2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.53), NumberSequenceKeypoint.new(0.51, 0.00), NumberSequenceKeypoint.new(1.00, 0.00)}
+UIGradient_2.Parent = Frame_3
+
+berschrift.Name = "überschrift"
+berschrift.Parent = Frame_3
+berschrift.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+berschrift.BackgroundTransparency = 1.000
+berschrift.BorderColor3 = Color3.fromRGB(0, 0, 0)
+berschrift.BorderSizePixel = 0
+berschrift.Position = UDim2.new(0.142606363, 0, 0.0416666679, 0)
+berschrift.Size = UDim2.new(0, 252, 0, 52)
+berschrift.Font = Enum.Font.SourceSansBold
+berschrift.Text = "Player Scripts"
+berschrift.TextColor3 = Color3.fromRGB(255, 255, 255)
+berschrift.TextScaled = true
+berschrift.TextSize = 74.000
+berschrift.TextTransparency = 0.320
+berschrift.TextWrapped = true
+
+ImageLabel_2.Parent = Frame_3
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(-0.355113626, 0, 0, 0)
+ImageLabel_2.Size = UDim2.new(0, 416, 0, 240)
+ImageLabel_2.Image = "rbxassetid://18931367583"
+ImageLabel_2.ScaleType = Enum.ScaleType.Crop
+
+teleport.Name = "teleport"
+teleport.Parent = Frame_3
+teleport.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+teleport.BackgroundTransparency = 0.850
+teleport.BorderColor3 = Color3.fromRGB(0, 0, 0)
+teleport.BorderSizePixel = 0
+teleport.Position = UDim2.new(0.59023267, 0, 0.308333337, 0)
+teleport.Size = UDim2.new(0, 133, 0, 47)
+teleport.Font = Enum.Font.SourceSansBold
+teleport.Text = "TP"
+teleport.TextColor3 = Color3.fromRGB(255, 255, 255)
+teleport.TextSize = 44.000
+teleport.TextTransparency = 0.300
+
+UICorner_3.CornerRadius = UDim.new(0, 10)
+UICorner_3.Parent = teleport
+
+Fly.Name = "Fly"
+Fly.Parent = Frame_3
+Fly.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Fly.BackgroundTransparency = 0.850
+Fly.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.587391794, 0, 0.616666675, 0)
+Fly.Size = UDim2.new(0, 133, 0, 47)
+Fly.Font = Enum.Font.SourceSansBold
+Fly.Text = "FLY"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextSize = 44.000
+Fly.TextTransparency = 0.300
+
+UICorner_4.CornerRadius = UDim.new(0, 10)
+UICorner_4.Parent = Fly
+
+xtotoggle.Name = "x to toggle"
+xtotoggle.Parent = Frame_3
+xtotoggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+xtotoggle.BackgroundTransparency = 1.000
+xtotoggle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+xtotoggle.BorderSizePixel = 0
+xtotoggle.Position = UDim2.new(0.338847846, 0, 0.8125, 0)
+xtotoggle.Size = UDim2.new(0, 309, 0, 17)
+xtotoggle.Font = Enum.Font.SourceSansBold
+xtotoggle.Text = "x to toggle"
+xtotoggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+xtotoggle.TextScaled = true
+xtotoggle.TextSize = 74.000
+xtotoggle.TextTransparency = 0.320
+xtotoggle.TextWrapped = true
+
+clicktotp.Name = "click to tp"
+clicktotp.Parent = Frame_3
+clicktotp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+clicktotp.BackgroundTransparency = 1.000
+clicktotp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+clicktotp.BorderSizePixel = 0
+clicktotp.Position = UDim2.new(0.338847846, 0, 0.504166663, 0)
+clicktotp.Size = UDim2.new(0, 309, 0, 17)
+clicktotp.Font = Enum.Font.SourceSansBold
+clicktotp.Text = "ctrl + click = tp"
+clicktotp.TextColor3 = Color3.fromRGB(255, 255, 255)
+clicktotp.TextScaled = true
+clicktotp.TextSize = 74.000
+clicktotp.TextTransparency = 0.320
+clicktotp.TextWrapped = true
+
+Frame_4.Parent = Frame_2
+Frame_4.BackgroundColor3 = Color3.fromRGB(71, 71, 71)
+Frame_4.BackgroundTransparency = 0.500
+Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0.661543071, 0, 1.09447539, 0)
+Frame_4.Size = UDim2.new(0, 189, 0, 240)
+
+UICorner_5.Parent = Frame_4
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(83, 83, 83)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(83, 83, 83))}
+UIGradient_3.Rotation = 90
+UIGradient_3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.53), NumberSequenceKeypoint.new(0.51, 0.00), NumberSequenceKeypoint.new(1.00, 0.00)}
+UIGradient_3.Parent = Frame_4
+
+ImageLabel_3.Parent = Frame_4
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Position = UDim2.new(-0.00124750694, 0, 0.216666669, 0)
+ImageLabel_3.Size = UDim2.new(0, 189, 0, 188)
+ImageLabel_3.Image = "rbxassetid://18930867260"
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = Frame_4
+Aimbot.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Aimbot.BackgroundTransparency = 0.850
+Aimbot.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Aimbot.BorderSizePixel = 0
+Aimbot.Position = UDim2.new(0.0476190485, 0, 0.112499997, 0)
+Aimbot.Size = UDim2.new(0, 171, 0, 47)
+Aimbot.Font = Enum.Font.SourceSansBold
+Aimbot.Text = "Aimbot"
+Aimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot.TextSize = 44.000
+Aimbot.TextTransparency = 0.300
+
+UICorner_6.CornerRadius = UDim.new(0, 10)
+UICorner_6.Parent = Aimbot
+
+TextLabel1.Name = "TextLabel 1"
+TextLabel1.Parent = Frame_4
+TextLabel1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel1.BackgroundTransparency = 1.000
+TextLabel1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel1.BorderSizePixel = 0
+TextLabel1.Position = UDim2.new(-0.320243061, 0, 0.324999988, 0)
+TextLabel1.Size = UDim2.new(0, 309, 0, 25)
+TextLabel1.Font = Enum.Font.SourceSansBold
+TextLabel1.Text = "Aim to lock"
+TextLabel1.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel1.TextScaled = true
+TextLabel1.TextSize = 74.000
+TextLabel1.TextTransparency = 0.320
+TextLabel1.TextWrapped = true
+
+Frame_5.Parent = Frame_2
+Frame_5.BackgroundColor3 = Color3.fromRGB(71, 71, 71)
+Frame_5.BackgroundTransparency = 0.500
+Frame_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_5.BorderSizePixel = 0
+Frame_5.Position = UDim2.new(0.31904909, 0, 2.16114187, 0)
+Frame_5.Size = UDim2.new(0, 204, 0, 45)
+
+UICorner_7.Parent = Frame_5
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(83, 83, 83)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(83, 83, 83))}
+UIGradient_4.Rotation = 90
+UIGradient_4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.53), NumberSequenceKeypoint.new(0.51, 0.00), NumberSequenceKeypoint.new(1.00, 0.00)}
+UIGradient_4.Parent = Frame_5
+
+ImageButton.Parent = Frame_5
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.0980392173, 0, -0.0666666701, 0)
+ImageButton.Size = UDim2.new(0, 51, 0, 51)
+ImageButton.Image = "rbxassetid://18932521680"
+
+ImageButton_2.Parent = Frame_5
+ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton_2.BackgroundTransparency = 1.000
+ImageButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton_2.BorderSizePixel = 0
+ImageButton_2.Position = UDim2.new(0.653557301, 0, -0.13333334, 0)
+ImageButton_2.Size = UDim2.new(0, 59, 0, 57)
+ImageButton_2.Image = "rbxassetid://18946297966"
+
+ImageButton_3.Parent = Frame_5
+ImageButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton_3.BackgroundTransparency = 1.000
+ImageButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton_3.BorderSizePixel = 0
+ImageButton_3.Position = UDim2.new(0.343137264, 0, -0.200000003, 0)
+ImageButton_3.Size = UDim2.new(0, 64, 0, 62)
+ImageButton_3.Image = "rbxassetid://18935880736"
+
+TextLabel2.Name = "TextLabel 2"
+TextLabel2.Parent = Frame_2
+TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel2.BackgroundTransparency = 1.000
+TextLabel2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel2.BorderSizePixel = 0
+TextLabel2.Position = UDim2.new(0.0572450794, 0, 0.433333337, 0)
+TextLabel2.Size = UDim2.new(0, 309, 0, 83)
+TextLabel2.Font = Enum.Font.SourceSansBold
+TextLabel2.Text = "Beta Version"
+TextLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel2.TextScaled = true
+TextLabel2.TextSize = 74.000
+TextLabel2.TextTransparency = 0.320
+TextLabel2.TextWrapped = true
+
+TextLabel2_2.Name = "TextLabel 2"
+TextLabel2_2.Parent = Frame_2
+TextLabel2_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel2_2.BackgroundTransparency = 1.000
+TextLabel2_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel2_2.BorderSizePixel = 0
+TextLabel2_2.Position = UDim2.new(0.110912345, 0, 0.754166782, 0)
+TextLabel2_2.Size = UDim2.new(0, 249, 0, 30)
+TextLabel2_2.Font = Enum.Font.SourceSansBold
+TextLabel2_2.Text = "Beta Version 1.3.0 by ItemTo & Main Dev"
+TextLabel2_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel2_2.TextScaled = true
+TextLabel2_2.TextSize = 74.000
+TextLabel2_2.TextTransparency = 0.320
+TextLabel2_2.TextWrapped = true
+
+TextLabel1_2.Name = "TextLabel 1"
+TextLabel1_2.Parent = Frame_2
+TextLabel1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel1_2.BackgroundTransparency = 1.000
+TextLabel1_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel1_2.BorderSizePixel = 0
+TextLabel1_2.Position = UDim2.new(0.0572450794, 0, 0.145833328, 0)
+TextLabel1_2.Size = UDim2.new(0, 309, 0, 83)
+TextLabel1_2.Font = Enum.Font.SourceSansBold
+TextLabel1_2.Text = "VortexEH"
+TextLabel1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel1_2.TextScaled = true
+TextLabel1_2.TextSize = 74.000
+TextLabel1_2.TextTransparency = 0.320
+TextLabel1_2.TextWrapped = true
+
+-- Scripts:
+
+local function KHHOET_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	function onKeyPress(inputObject, gameProcessedEvent)
+		if not gameProcessedEvent then
+	    if inputObject.KeyCode == Enum.KeyCode.T then 
+				if script.Parent.Parent.Frame.Visible == false then
+					script.Parent.Parent.Frame.Visible = true
+				else
+					script.Parent.Parent.Frame.Visible = false
+				end
+			end
+		end
+	end
+	
+	UserInputService.InputBegan:connect(onKeyPress)
+end
+coroutine.wrap(KHHOET_fake_script)()
+local function ZSRL_fake_script() -- Frame_2.LocalScript 
+	local script = Instance.new('LocalScript', Frame_2)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	function onKeyPress(inputObject, gameProcessedEvent)
+		if not gameProcessedEvent then
+	    if inputObject.KeyCode == Enum.KeyCode.T then 
+				if script.Parent.Parent.Frame.Visible == false then
+					script.Parent.Parent.Frame.Visible = true
+				else
+					script.Parent.Parent.Frame.Visible = false
+				end
+			end
+		end
+	end
+	
+	UserInputService.InputBegan:connect(onKeyPress)
+end
+coroutine.wrap(ZSRL_fake_script)()
+local function PECREH_fake_script() -- Frame_3.LocalScript 
+	local script = Instance.new('LocalScript', Frame_3)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	function onKeyPress(inputObject, gameProcessedEvent)
+		if not gameProcessedEvent then
+	    if inputObject.KeyCode == Enum.KeyCode.T then 
+				if script.Parent.Parent.Frame.Visible == false then
+					script.Parent.Parent.Frame.Visible = true
+				else
+					script.Parent.Parent.Frame.Visible = false
+				end
+			end
+		end
+	end
+	
+	UserInputService.InputBegan:connect(onKeyPress)
+end
+coroutine.wrap(PECREH_fake_script)()
+local function ZUDKW_fake_script() -- teleport.Script 
+	local script = Instance.new('Script', teleport)
+
+	    function Click(mouse)
+	
+		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Click%20Teleport.txt"))()
+	
+		end
+	
+	
+		script.Parent.MouseButton1Down:connect(Click)
+	
+end
+coroutine.wrap(ZUDKW_fake_script)()
+local function VCVMW_fake_script() -- Fly.Script 
+	local script = Instance.new('Script', Fly)
+
+	function Click(mouse)
+	
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Paullennox12341234/Vortex-Main/main/fly'))("")
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+	
+end
+coroutine.wrap(VCVMW_fake_script)()
+local function LOCHV_fake_script() -- Frame_4.LocalScript 
+	local script = Instance.new('LocalScript', Frame_4)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	function onKeyPress(inputObject, gameProcessedEvent)
+		if not gameProcessedEvent then
+	    if inputObject.KeyCode == Enum.KeyCode.T then 
+				if script.Parent.Parent.Frame.Visible == false then
+					script.Parent.Parent.Frame.Visible = true
+				else
+					script.Parent.Parent.Frame.Visible = false
+				end
+			end
+		end
+	end
+	
+	UserInputService.InputBegan:connect(onKeyPress)
+end
+coroutine.wrap(LOCHV_fake_script)()
+local function BDUKY_fake_script() -- Aimbot.Script 
+	local script = Instance.new('Script', Aimbot)
+
+	function Click(mouse)
+	
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Paullennox12341234/Vortex-Main/main/Aimbot'))("")
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+	
+end
+coroutine.wrap(BDUKY_fake_script)()
+local function KUXEKD_fake_script() -- Frame_5.LocalScript 
+	local script = Instance.new('LocalScript', Frame_5)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	function onKeyPress(inputObject, gameProcessedEvent)
+		if not gameProcessedEvent then
+	    if inputObject.KeyCode == Enum.KeyCode.T then 
+				if script.Parent.Parent.Frame.Visible == false then
+					script.Parent.Parent.Frame.Visible = true
+				else
+					script.Parent.Parent.Frame.Visible = false
+				end
+			end
+		end
+	end
+	
+	UserInputService.InputBegan:connect(onKeyPress)
+end
+coroutine.wrap(KUXEKD_fake_script)()
+local function GUVGWR_fake_script() -- ImageButton.Script 
+	local script = Instance.new('Script', ImageButton)
+
+	function Click(mouse)
+	
+	
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Paullennox12341234/Vortex-Main/main/player'))("")
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+	
+end
+coroutine.wrap(GUVGWR_fake_script)()
+local function VKHS_fake_script() -- ImageButton_2.Script 
+	local script = Instance.new('Script', ImageButton_2)
+
+	function Click(mouse)
+	
+	
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Paullennox12341234/Vortex-Main/main/car%20mod'))("")
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(Click)
+	
+end
+coroutine.wrap(VKHS_fake_script)()
+local function TCWFSH_fake_script() -- ImageButton_3.Effects&Functions 
+	local script = Instance.new('LocalScript', ImageButton_3)
+
+	--[[ | Local Stuff | ]]--
+	
+	local player = game.Players.LocalPlayer -- Player
+	local gameId = game.GameId -- Current Game[s] id
+	
+	--[[ | Functions | ]]--
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Rejoining!")
+		wait(1)
+		game:GetService("TeleportService"):Teleport(7711635737) -- Set this to your own Game id or Let the gameId stay there and let the local gameId do it's thing
+	end)
+	
+	--[[ | Effects | ]]-- -- OPTIONAL
+	
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.BorderSizePixel = 2
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.BorderSizePixel = 1
+	end)
+	
+	
+	-- end
+end
+coroutine.wrap(TCWFSH_fake_script)()
+local function JMIR_fake_script() -- Frame_2.LocalScript 
+	local script = Instance.new('LocalScript', Frame_2)
+
+	
+	local UIS = game:GetService('UserInputService')
+	
+	local frame = script.Parent
+	
+	
+	
+	local dragToggle = nil
+	
+	local dragSpeed = 0.25
+	
+	local dragStart = nil
+	
+	local startPos = nil
+	
+	
+	
+	local function updateInput(input)
+	
+		local delta = input.Position - dragStart
+	
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+	
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	
+	end
+	
+	
+	
+	frame.InputBegan:Connect(function(input)
+	
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+	
+			dragToggle = true
+	
+			dragStart = input.Position
+	
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+	
+				if input.UserInputState == Enum.UserInputState.End then
+	
+					dragToggle = false
+	
+				end
+	
+			end)
+	
+		end
+	
+	end)
+	
+	
+	
+	UIS.InputChanged:Connect(function(input)
+	
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	
+			if dragToggle then
+	
+				updateInput(input)
+	
+			end
+	
+		end
+	
+	end)
+end
+coroutine.wrap(JMIR_fake_script)()
