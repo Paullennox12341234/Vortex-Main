@@ -15,6 +15,7 @@ local Theme = {
 	TextColor = Color3.fromRGB(255, 255, 255)
 }
 
+
 for index, value in pairs(Theme) do
 	pcall(Venyx.setTheme, Venyx, index, value)
 end
@@ -40,7 +41,7 @@ local function TeleportVehicle(CoordinateFrame: CFrame)
 end
 
 
-local vehiclePage = Venyx:addPage("Vehicle", 8356815386)
+local vehiclePage = Venyx:addPage("Car mod", 8356815386)
 local usageSection = vehiclePage:addSection("Usage")
 local velocityEnabled = true;
 usageSection:addToggle("Keybinds Active", velocityEnabled, function(v) velocityEnabled = v end)
@@ -187,29 +188,6 @@ elseif game.PlaceId == 54865335 then
 elseif game.PlaceId == 5232896677 then
 	local pacificoPage = Venyx:addPage("Pacifico", 3028235557)
 end
-local infoPage = Venyx:addPage("Information", 8356778308)
-local discordSection = infoPage:addSection("Discord")
-discordSection:addButton(syn and "Join the Discord server" or "Copy Discord Link", function()
-	if syn then
-		syn.request({
-			Url = "http://127.0.0.1:6463/rpc?v=1",
-			Method = "POST",
-			Headers = {
-				["Content-Type"] = "application/json",
-				["Origin"] = "https://discord.com"
-			},
-			Body = game:GetService("HttpService"):JSONEncode({
-				cmd = "INVITE_BROWSER",
-				args = {
-					code = "ENHYznSPmM"
-				},
-				nonce = game:GetService("HttpService"):GenerateGUID(false)
-			}),
-		})
-		return
-	end
-	setclipboard("https://www.discord.com/invite/ENHYznSPmM")
-end)
 
 
 local function CloseGUI()
